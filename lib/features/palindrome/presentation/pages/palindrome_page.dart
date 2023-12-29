@@ -8,11 +8,19 @@ class PalindromePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.blueGrey,
-      body: Center(
-        child: PalindromeWidget(),
-      ),
+    return const Stack(
+      children: [
+        Image(
+          image: AssetImage("assets/images/background@3x.png"),
+          fit: BoxFit.cover,
+        ),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          body: Center(
+            child: PalindromeWidget(),
+          ),
+        ),
+      ],
     );
   }
 }
