@@ -22,7 +22,7 @@ class NameProvider extends ChangeNotifier {
 
   String get userName {
     if (_user != null) {
-      return _user!.firstName + " " + _user!.lastName;
+      return "${_user!.firstName} ${_user!.lastName}";
     } else {
       return "Please select user";
     }

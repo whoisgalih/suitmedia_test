@@ -12,7 +12,7 @@ class UserListPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('User List'),
       ),
-      body: UserListWidget(),
+      body: const UserListWidget(),
     );
   }
 }

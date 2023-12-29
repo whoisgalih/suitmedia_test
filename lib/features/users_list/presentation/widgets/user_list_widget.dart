@@ -17,7 +17,7 @@ class UserListWidget extends StatefulWidget {
 }
 
 class _UserListWidgetState extends State<UserListWidget> {
-  ScrollController _scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
