@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 import 'package:suitmedia_test/features/users_list/business/entities/user_entity.dart';
 import 'package:suitmedia_test/features/users_list/presentation/providers/user_list_provider.dart';
 import 'package:suitmedia_test/features/users_list/presentation/widgets/user_tile_widget.dart';
-import 'package:suitmedia_test/features/welcome/presentation/providers/name_provider.dart';
 
 class UserListWidget extends StatefulWidget {
   const UserListWidget({
