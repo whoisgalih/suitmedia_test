@@ -62,6 +62,7 @@ class _UserListWidgetState extends State<UserListWidget> {
         await userListProvider.reset();
       },
       child: ListView.builder(
+        controller: _scrollController,
         itemCount: userListProvider.users.length,
         itemBuilder: (context, index) {
           if (index == userListProvider.users.length) {

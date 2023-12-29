@@ -13,6 +13,8 @@ class PalindromePage extends StatelessWidget {
         Image(
           image: AssetImage("assets/images/background@3x.png"),
           fit: BoxFit.cover,
+          width: double.infinity,
+          height: double.infinity,
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
