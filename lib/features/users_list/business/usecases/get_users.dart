@@ -8,7 +8,13 @@ class GetUsers {
 
   GetUsers(this.repository);
 
-  Future<Either<Failure, UsersEntity>> call() async {
-    return await repository.getUsers();
+  Future<Either<Failure, UsersEntity>> call({
+    required int page,
+    int perPage = 10,
+  }) async {
+    return await repository.getUsers(
+      page: page,
+      perPage: perPage,
+    );
   }
 }

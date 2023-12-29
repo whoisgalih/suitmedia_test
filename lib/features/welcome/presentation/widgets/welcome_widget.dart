@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:suitmedia_test/features/palindrome/presentation/widgets/custom_button.dart';
+import 'package:suitmedia_test/features/users_list/business/entities/user_entity.dart';
 import 'package:suitmedia_test/features/welcome/presentation/providers/name_provider.dart';
 
 class WelcomeWidget extends StatelessWidget {
@@ -25,7 +26,7 @@ class WelcomeWidget extends StatelessWidget {
           Expanded(
             child: Center(
               child: Text(
-                "Please select user",
+                nameProvider.userName,
                 style: Theme.of(context).textTheme.displaySmall,
               ),
             ),

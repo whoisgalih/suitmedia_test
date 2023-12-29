@@ -13,9 +13,15 @@ class UserRepositoryImplementation implements UserRepository {
   });
 
   @override
-  Future<Either<Failure, UsersModel>> getUsers() async {
+  Future<Either<Failure, UsersModel>> getUsers({
+    required int page,
+    int perPage = 10,
+  }) async {
     try {
-      final users = await remoteDataSource.getUsers();
+      final users = await remoteDataSource.getUsers(
+        page: page,
+        perPage: perPage,
+      );
       return Right(users);
     } on ServerException {
       return Left(ServerFailure(errorMessage: 'Server Error'));
